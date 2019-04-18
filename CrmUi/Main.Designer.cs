@@ -106,7 +106,7 @@
             this.sellerAddToolStripMenuItem.Name = "sellerAddToolStripMenuItem";
             this.sellerAddToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sellerAddToolStripMenuItem.Text = "Добавить";
-            this.sellerAddToolStripMenuItem.Click += new System.EventHandler(this.sellerAddToolStripMenuItem_Click);
+            this.sellerAddToolStripMenuItem.Click += new System.EventHandler(this.SellerAddToolStripMenuItem_Click);
             // 
             // customerAddToolStripMenuItem
             // 

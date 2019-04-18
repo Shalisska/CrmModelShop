@@ -45,9 +45,14 @@ namespace CrmUi
             catalogCheck.Show();
         }
 
-        private void sellerAddToolStripMenuItem_Click(object sender, EventArgs e)
+        private void SellerAddToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            var form = new SellerForm();
+            if (form.ShowDialog() == DialogResult.OK)
+            {
+                db.Sellers.Add(form.Seller);
+                db.SaveChanges();
+            }
         }
 
         private void CustomerAddToolStripMenuItem_Click(object sender, EventArgs e)
